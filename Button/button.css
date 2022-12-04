@@ -1,0 +1,73 @@
+.button {
+    display: inline-block;
+    padding: 0.60rem 2rem;
+    border-radius: 10rem;
+    color: #1C607F;
+    font-size: 18px;
+    font-family: Fantasy;
+    width: 10%;
+    height: 10%;
+    transition: all 0.3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    border-style: solid;
+    border-color: #0692BC;
+    border-width: 3px;
+    
+}
+
+.button:after {
+    content: 'Click To Me';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border-radius: 10rem;
+    z-index: -2;
+
+}
+
+.button:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: #0692BC;
+    transition: all 0.3s;
+    border-radius: 10rem;
+    z-index: -1;
+}
+
+.button:hover {
+    color: #fff;
+
+}
+
+.button:hover:before {
+    width: 100%;
+    content: 'Hover';
+}
+
+/* Fundamental Settings*/
+* {
+    font-family: Arial;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.container {
+    padding-top: 50px;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+}
+
+
+
+
+

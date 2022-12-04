@@ -1,0 +1,54 @@
+form input[type=search] {
+	width: 60px;
+	height: 30px;
+	left: 42%;
+	position: absolute;
+	top: 30%;
+	transition: all 0.5s;
+	border: solid 1.5px #A7C2CE;
+	border-radius: 10rem;
+	outline-width: 0;
+}
+
+form input[type=search]:focus {
+	left: 42%;
+	position: absolute;
+	top: 30%;
+	animation-name: example;
+	transition: all 0.5s;
+	width: 150px;
+	animation-fill-mode: forwards;
+	animation-duration: 0.8s;
+}
+
+@keyframes example {
+	0% {
+		border-bottom: solid 3px #0C95BE;
+	}
+
+	25% {
+		border-left: solid 3px #0C95BE;
+	}
+
+	50% {
+		border-top: solid 3px #0C95BE;
+	}
+
+	75% {
+		border-right: solid 3px #0C95BE;
+	}
+
+	100% {
+
+		border-top: solid 3px #0C95BE;
+		border-right: solid 3px #0C95BE;
+	}
+}
+
+.hover {
+	width: 6px;
+	height: 3px;
+	left: 42%;
+	position: absolute;
+	top: 30%;
+}

@@ -1,0 +1,98 @@
+.element {
+    background-color: #0692BC;
+    width: 80px;
+    height: 20px;
+    margin: 20px auto;
+    text-align: justify;
+    margin-bottom: 200px;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    transition: all 0.5s;
+}
+
+
+.element:hover {
+    background-color: #6EBE45;
+    animation-name: example;
+    transition: all 0.5s;
+    width: 80px;
+    height: 80px;
+    animation-fill-mode: forwards;
+    transform: translateY(-90%) rotate(45deg);
+    animation-duration: 3s;
+}
+
+@keyframes example {
+    0% {
+        border-start-start-radius: 3rem;
+        border-end-end-radius: 0rem;
+        border-end-start-radius: 4rem;
+        border-start-end-radius: 4rem;
+    }
+
+    25% {
+        border-start-start-radius: 6rem;
+        border-end-end-radius: 0rem;
+        border-end-start-radius: 8rem;
+        border-start-end-radius: 8rem;
+    }
+
+    50% {
+        border-start-start-radius: 9rem;
+        border-end-end-radius: 0rem;
+        border-end-start-radius: 12rem;
+        border-start-end-radius: 12rem;
+    }
+
+    75% {
+        border-start-start-radius: 12rem;
+        border-end-end-radius: 0rem;
+        border-end-start-radius: 16rem;
+        border-start-end-radius: 16rem;
+    }
+
+    100% {
+        border-start-start-radius: 15rem;
+        border-end-end-radius: 0rem;
+        border-end-start-radius: 20rem;
+        border-start-end-radius: 20rem;
+    }
+}
+
+
+.mainElement {
+    background-color: gray;
+    height: 10px;
+    width: 800px;
+    margin: auto;
+    margin-top: 50px;
+    text-align: justify;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.secondMain {
+    background-color: black;
+    width: 10px;
+    height: 10px;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: row;
+    margin-left: 105px;
+}
+
+
+.mainElementTop {
+    height: 10px;
+    width: 700px;
+    margin: auto;
+    margin-top: 100px;
+    text-align: justify;
+    border-radius: 1rem;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: row;
+}
